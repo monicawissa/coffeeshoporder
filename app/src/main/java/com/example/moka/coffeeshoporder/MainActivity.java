@@ -24,18 +24,15 @@ public class MainActivity extends AppCompatActivity {
         ChkBx1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked){
-                    updateInPrice();
-                }
+                updateInPrice();
+
             }
         });
         ChkBx2 = ( CheckBox ) findViewById( R.id.whipped_cream_checkbox );
         ChkBx2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked){
                     updateInPrice();
-                }
             }
         });
     }
